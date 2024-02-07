@@ -11,6 +11,16 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.nav-background {
+.top-nav {
     background-color: var(--nav-background-color);
+    height: var(--nav-height);
+}
+
+.side-nav{
+    background-color: var(--nav-background-color);
+    margin-top:  var(--nav-height);
+}
+
+.custom-secondary-color{
+    color: var(--nav-color-primary);
 }

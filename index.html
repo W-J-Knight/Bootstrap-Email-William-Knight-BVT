@@ -21,9 +21,17 @@
     <nav class="navbar bg-body-tertiary fixed-top p-0" data-bs-theme="dark">
         <!-- <top-nav> custom class main navbar-->
         <div class="container-fluid py-2 top-nav">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <!-- Animated Custom Hamburger Icon in Navbar in bootstrap 5 -->
+            <!-- https://youtu.be/_MrShB9fh7U?si=Z3AnJSRUiIXQ5Ism -->
+            <!-- collapsed is custom class  -->
+            <!-- had to change data-bs-toggle from *offcanvas*  to *collapse*-->
+            <button class="navbar-toggler d-flex d-lg-none flex-column justify-content-around collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation">
+                <!-- toggler-icon, top-bar, middle-bar, bottom-bar all custom classes to make an animated hambuger menu-->
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
             </button>
             <a class="navbar-brand" href="#">Thunderbird</a>
             <!--for logo -- https://blog.thunderbird.net/2023/05/introducing-the-brand-new-thunderbird-logo/ -->

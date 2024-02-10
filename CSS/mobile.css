@@ -1,0 +1,15 @@
+:root {
+    --search-with: 225px;
+}
+
+.search {
+    width: 55%;
+}
+
+#search {
+    width: 150px;
+}
+
+.logo-title {
+    display: none;
+}

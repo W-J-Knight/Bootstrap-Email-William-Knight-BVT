@@ -5,10 +5,13 @@
     --nav-color-primary: #7BB1C8;
     --nav-color-secondary: #1683E6;
     --nav-height: 60px;
+    --search-icon-width: 45px;
+    --search-with: 280px;
 }
 
 body {
     font-family: "Poppins", sans-serif;
+    position: relative;
 }
 
 .top-nav {
@@ -17,11 +20,11 @@ body {
 }
 
 .side-nav {
-    background-color: var(--nav-background-color);
+    background-color: var(--nav-background-color)!important;
     margin-top: var(--nav-height);
 }
 
-.custom-secondary-text{
+.custom-secondary-text {
     color: var(--nav-color-primary);
 }
 
@@ -108,4 +111,81 @@ body {
     position: absolute;
     top: 20px;
     transform: rotate(0deg);
+}
+
+.search {
+    background-color: var(--nav-color-primary);
+    border-radius: 8px;
+    max-width: var(--search-with);
+    width: 33%;
+    height: 29px;
+    margin-right: 2px;
+    /* padding: .rem; */
+    display: flex;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    padding-top: 5px;
+    /* height: 3.6rem; */
+    color: var(--nav-color-secondary);
+}
+
+
+#search {
+    background-color: inherit;
+    border: none;
+    width: 160px;
+    height: 100%;
+    padding-left: .7rem;
+    font-size: 16px;
+}
+
+#search::placeholder {
+    color: var(--nav-background-color)
+}
+
+#search:focus {
+    outline: none;
+}
+
+/* #add-value {
+    margin-top: 700px;
+    padding-top: 60000px;
+    font-size: larger;
+    font-weight: bold;
+    color: #88f;
+    padding: 0.4em;
+    border: 3px solid #dde;
+} */
+
+CSS Code::root {
+    --offcanvas-width: 250px;
+    --topNavbarHeight: 56px;
+}
+
+.offcanvas {
+    width: var(--offcanvas-width);
+}
+
+@media (min-width: 992px) {
+    main {
+        margin-left: var(--offcanvas-width);
+    }
+
+    .offcanvas {
+        -webkit-transform: none;
+        transform: none;
+        visibility: visible !important;
+        top: var(--topNavbarHeight);
+        height: calc(100% - var(--topNavbarHeight));
+    }
+
+    .offcanvas-backdrop::before {
+        display: none;
+    }
+
+    .offcanvas-header .btn-close {
+        visibility: hidden;
+    }
 }

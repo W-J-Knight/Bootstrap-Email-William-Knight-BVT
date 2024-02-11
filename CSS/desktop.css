@@ -5,6 +5,6 @@
 
 .side-nav {
     top: 0 !important;
-    left: 400px !important;
+    left: var(--side-nav-width) !important;
     visibility: visible !important;
 }

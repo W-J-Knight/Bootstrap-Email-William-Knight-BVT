@@ -21,7 +21,7 @@
 
 <body>
 
-    <nav class="navbar bg-body-tertiary fixed-top p-0" data-bs-theme="dark">
+    <nav class="navbar bg-body-tertiary fixed-top p-0 m-0" data-bs-theme="dark">
         <!-- <top-nav> custom class main navbar-->
         <div class="container-fluid py-2 top-nav d-flex align-content-center flex-nowrap">
             <!-- Animated Custom Hamburger Icon in Navbar in bootstrap 5 -->
@@ -56,7 +56,7 @@
             <img src="images/logo/logo.png" alt="thunderbird logo" width="45" height="45">
             <!-- <side-nav> custom class for offcanvas -->
 
-            <div class=" offcanvas offcanvas-start  side-nav" tabindex="-1" id="offcanvasNavbar"
+            <div class=" offcanvas offcanvas-start side-nav" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
@@ -97,6 +97,16 @@
             </div>
         </div>
     </nav>
+    <main class="container p-0 position-absolute overflow-y-hidden">
+        <div class="row p-0 m-0 justify-content-end">
+            <section class="col col-lg-6 bg-primary p-0 m-0">
+                Column
+            </section>
+            <section class="col col-lg-6 bg-danger p-0 m-0  ">
+                Column
+            </section>
+        </div>
+    </main>
 
 
 

@@ -5,13 +5,17 @@
     --nav-color-primary: #7BB1C8;
     --nav-color-secondary: #1683E6;
     --nav-height: 60px;
+    --side-nav-width: 25%;
     --search-icon-width: 45px;
-    --search-with: 280px;
+    --search-width: 280px;
 }
 
 body {
     font-family: "Poppins", sans-serif;
     position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: var(--nav-background-color);
 }
 
 .top-nav {
@@ -22,6 +26,7 @@ body {
 .side-nav {
     background-color: var(--nav-background-color)!important;
     margin-top: var(--nav-height);
+    width: var(--side-nav-width)!important;
 }
 
 .custom-secondary-text {
@@ -117,7 +122,7 @@ body {
 .search {
     background-color: var(--nav-color-primary);
     border-radius: 8px;
-    max-width: var(--search-with);
+    max-width: var(--search-width);
     width: 33%;
     height: 29px;
     margin-right: 2px;
@@ -148,4 +153,18 @@ body {
 
 #search:focus {
     outline: none;
+}
+
+main{
+    max-width: calc(100vw - var(--side-nav-width)) !important;
+    margin-top: var(--nav-height);
+    margin-left: var(--side-nav-width);
+     /* margin-right: 0;  */
+    top:0 !important;
+    /* right: 0 !important;   */
+    left: var(--side-nav-width);
+}
+
+section{
+    min-height: calc(100vh - var(--nav-height));
 }

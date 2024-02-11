@@ -2,6 +2,7 @@
     --search-width: 225px;
 }
 
+
 .search {
     width: 55%;
 }
@@ -11,5 +12,10 @@
 }
 
 .logo-title {
+    display: none;
+}
+
+.side-nav {
+    left: 50 !important; 
     display: none;
 }

@@ -1,10 +1,57 @@
+@media (min-width: 768px) {
+    :root {
+        --side-nav-width: 37%;
+    }
+
+    .emails {
+        width: 100%;
+    }
+
+    .view-detail {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    :root {
+        --side-nav-width: 30%;
+    }
+
+    .emails {
+        width: 50%;
+    }
+
+    .view-detail {
+        display: block;
+    }
+}
+
+@media (min-width: 1700px) {
+    :root {
+        --side-nav-width: 25%;
+    }
+
+}
+
 .logo-title {
     display: block;
     font-size: 25px;
 }
 
 .side-nav {
-    top: 0 !important;
-    left: var(--side-nav-width) !important;
+    left: 0 !important;
     visibility: visible !important;
+}
+
+.offcanvas {
+    display: block !important;
+}
+
+main {
+    max-width: calc(100vw - var(--side-nav-width)) !important;
+    margin-top: var(--nav-height);
+    margin-left: var(--side-nav-width) !important;
+    top: 0 !important;
+    right: 0 !important;
 }

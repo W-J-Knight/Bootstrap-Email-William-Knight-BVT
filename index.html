@@ -13,24 +13,24 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/mobile.css" media="(max-width:575px)">
-    <link rel="stylesheet" href="CSS/tablet.css" media="(min-width: 576px) and (max-width:991px)">
-    <link rel="stylesheet" href="CSS/desktop.css" media="(min-width: 992px)">
+    <link rel="stylesheet" href="CSS/tablet.css" media="(min-width: 576px) and (max-width: 767px)">
+    <link rel="stylesheet" href="CSS/desktop.css" media="(min-width: 768px)">
     <title>Thunderbird Email</title>
 
 </head>
 
 <body>
 
-   <nav class="navbar bg-body-tertiary fixed-top p-0" data-bs-theme="dark">
+    <nav class="navbar bg-body-tertiary fixed-top p-0" data-bs-theme="dark">
         <!-- <top-nav> custom class main navbar-->
         <div class="container-fluid py-2 top-nav d-flex align-content-center flex-nowrap">
             <!-- Animated Custom Hamburger Icon in Navbar in bootstrap 5 -->
             <!-- https://youtu.be/_MrShB9fh7U?si=Z3AnJSRUiIXQ5Ism -->
             <!-- collapsed is custom class  -->
             <!-- had to change data-bs-toggle from *offcanvas*  to *collapse*-->
-            <button class="navbar-toggler d-flex d-md-none flex-column justify-content-around collapsed hambuger" type="button"
-                data-bs-toggle="collapse" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler d-flex d-md-none flex-column justify-content-around collapsed hambuger"
+                type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <!-- toggler-icon, top-bar, middle-bar, bottom-bar all custom classes to make an animated hambuger menu-->
                 <span class="toggler-icon top-bar"></span>
                 <span class="toggler-icon middle-bar"></span>
@@ -38,55 +38,65 @@
             </button>
 
             <div class="search">
-
                 <label for="search">
-
+                    <!-- google icon for search -->
                     <span class="material-symbols-outlined">
                         search
                     </span>
                 </label>
+
                 <input type="text" placeholder="search" id="search">
-                <!-- <div class="email-title-mobile">Thunderbird</div> -->
+
             </div>
 
 
             <a class="navbar-brand logo-title" href="#">Thunderbird</a>
+
             <!--for logo -- https://blog.thunderbird.net/2023/05/introducing-the-brand-new-thunderbird-logo/ -->
             <img src="images/logo/logo.png" alt="thunderbird logo" width="45" height="45">
             <!-- <side-nav> custom class for offcanvas -->
+
             <div class=" offcanvas offcanvas-start  side-nav" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <!-- drop the close on the offcanvas -->
                     <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
                 </div>
+
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Dropdown
                             </a>
+
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
+
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
+
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
+
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </nav> 
+    </nav>
 
 
 

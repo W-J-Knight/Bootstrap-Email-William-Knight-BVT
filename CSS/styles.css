@@ -113,6 +113,7 @@ body {
     transform: rotate(0deg);
 }
 
+/* search bar */
 .search {
     background-color: var(--nav-color-primary);
     border-radius: 8px;
@@ -147,45 +148,4 @@ body {
 
 #search:focus {
     outline: none;
-}
-
-/* #add-value {
-    margin-top: 700px;
-    padding-top: 60000px;
-    font-size: larger;
-    font-weight: bold;
-    color: #88f;
-    padding: 0.4em;
-    border: 3px solid #dde;
-} */
-
-CSS Code::root {
-    --offcanvas-width: 250px;
-    --topNavbarHeight: 56px;
-}
-
-.offcanvas {
-    width: var(--offcanvas-width);
-}
-
-@media (min-width: 992px) {
-    main {
-        margin-left: var(--offcanvas-width);
-    }
-
-    .offcanvas {
-        -webkit-transform: none;
-        transform: none;
-        visibility: visible !important;
-        top: var(--topNavbarHeight);
-        height: calc(100% - var(--topNavbarHeight));
-    }
-
-    .offcanvas-backdrop::before {
-        display: none;
-    }
-
-    .offcanvas-header .btn-close {
-        visibility: hidden;
-    }
 }

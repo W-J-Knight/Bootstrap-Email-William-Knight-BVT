@@ -231,12 +231,8 @@ section {
 }
 
 /* far right section view-detail */
-.view-detail{
-
-}
 
 .view-detail h2{
-    /* border: red solid 2px; */
     width: 100%;
 }
 
@@ -245,6 +241,5 @@ section {
 }
 
 .view-detail p a:hover {
-    color: var(--nav-color-secondary) !important;
     font-size: 32px;
 }

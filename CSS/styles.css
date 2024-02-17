@@ -229,3 +229,22 @@ main {
 section {
     min-height: calc(100vh - var(--nav-height));
 }
+
+/* far right section view-detail */
+.view-detail{
+
+}
+
+.view-detail h2{
+    /* border: red solid 2px; */
+    width: 100%;
+}
+
+.view-detail p a{
+    color: var(--nav-color-secondary) !important;
+}
+
+.view-detail p a:hover {
+    color: var(--nav-color-secondary) !important;
+    font-size: 32px;
+}

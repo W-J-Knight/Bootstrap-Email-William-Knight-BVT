@@ -241,11 +241,12 @@
     <!-- emails section  -->
     <main class="container p-0 position-absolute">
         <div class="row p-0 m-0 justify-content-end">
-            <section class="col col-lg-6 bg-primary p-0 m-0 d-flex flex-column  container emails">
+            <section class="col col-md-6 bg-primary p-0 m-0 d-flex flex-column  container emails">
 
 
-                <div class="d-flex justify-content-evenly flex-{grow|shrink}-1 email " justify-content-between><img
-                        src="images/icons/car.svg" alt="car icon" width="24" height="24" class=" align-self-center">
+                <div type="button" class="btn  d-flex justify-content-evenly flex-{grow|shrink}-1 email "
+                    data-bs-toggle="modal" data-bs-target="#smithModal">
+                    <img src="images/icons/car.svg" alt="car icon" width="24" height="24" class=" align-self-center">
                     <div class="preview">
                         <p><span class="text-light ">Smith's Buy Here Car Lot:</span> Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Quas deserunt.</p>
@@ -378,7 +379,7 @@
 
             </section>
 
-            <section class="col col-lg-6  p-0 m-0  view-detail d-flex flex-column">
+            <section class="col col-md-4 col-lg-6  p-0 m-0  view-detail d-flex flex-column">
                 <h2 class="text-light text-center p-2 fs-1">Class Assignmemt</h2>
                 <p class="text-light bvt p-3 fs-3">
                     This is a classroom assignment for
@@ -451,6 +452,79 @@
             </div>
         </div>
 
+
+        <!-- incoming email modals -->
+        <div class="modal fade incoming-emails" id="smithModal" tabindex="-1" aria-labelledby="smithModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog model-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header  border-0">
+                        <div id="smithModalLabel" class="">
+                            <h1 class="modal-title fs-5 mt-5 ms-5">From: Smith's Buy Here Car Lot</h1>
+                            <h1 class="modal-title fs-5 ms-5">To: William Knight</h1>
+                        </div>
+                        <button type="button" class="btn-close mb-4" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        
+                          
+                                <div class="modal-body-content d-flex flex-column rounded-3 ">
+
+                                    <p class="p-2">Hello William,</p>
+                                    <p class="p-4 mt-3">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus earum, et saepe natus
+                                        recusandae animi dignissimos assumenda odit qui quidem enim? Accusamus similique quaerat
+                                        dolore reprehenderit, corporis impedit ipsum quibusdam eum et ipsam eius quas sed quidem
+                                        repudiandae cum earum, doloremque, voluptas consectetur eligendi dicta blanditiis
+                                        expedita recusandae. Accusantium, ex.
+                                    </p>
+                                </div>
+                            
+
+                       
+                    </div>
+
+                    <div class="modal-footer justify-content-between  border-0">
+                        <div>
+                            <p>
+                                <span class="material-symbols-outlined text-black">
+                                    folder_limited
+                                </span>
+
+                                <span class="material-symbols-outlined text-black">
+                                    delete
+                                </span>
+
+                                <span class="material-symbols-outlined text-black">
+                                    inventory_2
+                                </span>
+
+                                <span class="material-symbols-outlined  star text-black">
+                                    star
+                                </span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span class="material-symbols-outlined text-black">
+                                    reply
+                                </span>
+
+                                <span class="material-symbols-outlined text-black px-1 border-end border-start">
+                                    reply_all
+                                </span>
+
+                                <span class="material-symbols-outlined text-black">
+                                    forward
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 

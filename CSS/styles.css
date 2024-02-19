@@ -216,7 +216,7 @@ body {
 
 main {
     max-width: 100vw !important;
-    min-width: 0;
+    /* min-width: 0; */
     width: 100%;
     margin-top: var(--nav-height);
     top: 0 !important;
@@ -247,15 +247,30 @@ section {
 
 /* modals */
 
-#newEmailModal {
+#newEmailModal,
+#smithModal {
     height: 100vh;
 }
-#newEmailModal .modal-lg{
+
+#newEmailModal .modal-lg,
+#smithModal .modal-lg {
     width: 37vw !important;
     height: 150px !important;
 }
 
 
-.modal-body .to, .modal-body .cc , .modal-body .subject {
+.modal-body .to,
+.modal-body .cc,
+.modal-body .subject {
     width: 80%;
+}
+
+.incoming-emails .modal-content {
+    background-color: #7BB1C8;
+}
+
+.incoming-emails .modal-body .modal-body-content{
+    width: 60%;
+    border: 5px !important;
+    background-color: rgba(28, 27, 27, 40%);
 }

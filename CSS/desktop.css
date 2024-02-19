@@ -12,7 +12,7 @@
     }
 
     #newEmailModal .modal-content,
-    #smithModal .modal-content {
+    .incoming-emails .modal-content {
         right: -17vw;
     }
 }
@@ -31,7 +31,7 @@
     }
 
     #newEmailModal .modal-content,
-    #smithModal .modal-content {
+    .incoming-emails .modal-content {
         right: -25vw;
     }
 }
@@ -39,7 +39,7 @@
 @media (min-width: 1250px) {
 
     #newEmailModal .modal-content,
-    #smithModal .modal-content {
+    .incoming-emails .modal-content {
         right: -28vw;
     }
 }
@@ -79,7 +79,7 @@ main {
 
 /* modals */
 #newEmailModal .modal-content,
-#smithModal .modal-content {
+.incoming-emails .modal-content {
     max-width: 800px;
     width: 60vw !important;
     position: absolute;
@@ -88,7 +88,7 @@ main {
 }
 
 #newEmailModal .modal-body,
-#smithModal .modal-body {
+.incoming-emails .modal-body {
     /* background-color: brown; */
     height: 75vh;
 }

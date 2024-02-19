@@ -14,3 +14,13 @@
 .logo-title {
     display: none;
 }
+
+.model-lg{
+    width: 90vw;
+    height: 100vh;
+}
+
+#newEmailModal .modal-body{
+    /* background-color: brown; */
+    height: 75vh;
+}

@@ -11,3 +11,15 @@
     font-size: 16px;
 }
 
+#newEmailModal  {
+    /* background-color: blue; */
+    padding: 3rem 0 0 3rem;
+}
+.modal-content{
+    width: 83vw !important;
+}
+
+#newEmailModal .modal-body {
+    /* background-color: brown; */
+    height: 75vh;
+}

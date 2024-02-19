@@ -15,6 +15,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     background-color: var(--nav-background-color);
 }
 
@@ -232,14 +233,29 @@ section {
 
 /* far right section view-detail */
 
-.view-detail h2{
+.view-detail h2 {
     width: 100%;
 }
 
-.view-detail p a{
+.view-detail p a {
     color: var(--nav-color-secondary) !important;
 }
 
 .view-detail p a:hover {
     font-size: 32px;
+}
+
+/* modals */
+
+#newEmailModal {
+    height: 100vh;
+}
+#newEmailModal .modal-lg{
+    width: 37vw !important;
+    height: 150px !important;
+}
+
+
+.modal-body .to, .modal-body .cc , .modal-body .subject {
+    width: 80%;
 }

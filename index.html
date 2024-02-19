@@ -67,7 +67,9 @@
 
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
+
+                        <!-- trigger new modal -->
+                        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#newEmailModal">
                             <a class="nav-link active container-fluid d-flex align-items-center gap-4 ms-4"
                                 aria-current="page" href="#">
                                 <img src="images/favicon/favicon.png" alt="new email" width="50" height="50"
@@ -180,7 +182,7 @@
                             <a class="nav-link  " aria-current="page" href="#">
                                 <p class="container-fluid d-flex align-items-center gap-4 ms-2">
                                     <span class="material-symbols-outlined">
-                                        star
+                                        description
                                     </span>
                                     Drafts
                                 </p>
@@ -394,6 +396,61 @@
                 </p>
             </section>
         </div>
+        <!-- modals -->
+        <!-- new email modal -->
+
+        <!-- Modal -->
+        <div class="modal fade newEmail" id="newEmailModal" tabindex="-1" aria-labelledby="newEmailModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog model-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="newEmailModalLabel">New Message</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="border-bottom border-3 to">
+                            <p class="m-0 p-0">To:</p>
+                        </div>
+
+                        <div class="border-bottom border-3 cc">
+                            <p class="m-0 p-0">Cc:</p>
+                        </div>
+
+                        <div class="border-bottom border-3 subject">
+                            <p class="m-0 p-0">Subject:</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <div>
+                            <p>
+                                <span class="material-symbols-outlined text-black">
+                                    delete
+                                </span>
+                                <span class="material-symbols-outlined text-black">
+                                    description
+                                </span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span class="material-symbols-outlined text-black">
+                                    add_a_photo
+                                </span>
+                                <span class="material-symbols-outlined text-black">
+                                    attach_file_add
+                                </span>
+                                <span class="material-symbols-outlined sent text-black">
+                                    send
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 
